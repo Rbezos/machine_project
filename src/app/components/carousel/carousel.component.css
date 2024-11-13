@@ -1,0 +1,30 @@
+.carousel-slide {
+    background: #c1e0e9;
+    border-radius: 0.5rem;
+    .photo_container{
+        object-fit: cover;
+        overflow: hidden;
+        height: 10rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .slide_info{
+        padding: 1rem;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        .container_tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .low_stock {
+            background: orange;
+            border-radius: 0.2rem;
+            padding: 0rem 1rem;
+            font-weight: 700;
+        }
+    }
+}
+
