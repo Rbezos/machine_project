@@ -1,0 +1,12 @@
+.container {
+    z-index: 1;
+    position: fixed;
+    width: 40rem;
+    top: 0.5rem;
+    right: 10rem;
+    background: white;
+    border: 0.1rem solid #d5d5d5;
+    height: 32.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    transition: 1s;
+}

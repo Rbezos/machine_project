@@ -1,112 +1,24 @@
-<carousel  [slideToShow]="8">
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Nombre de la maquina: <strong>Maquina 1</strong></div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div class="container_tags">
-                <span class="low_stock">Cafe</span>
-                <span class="low_stock">Stock: 10</span>
-                <span class="low_stock">10</span>
-                <span class="low_stock">10</span>
-                <span class="low_stock">10</span>
-                <span class="low_stock">10</span>
-                <span class="low_stock">10</span>
-                <span class="low_stock">10</span>
+<div class="slider-container">
+    <carousel  
+        [slideToShow]="7" 
+        [slideWidth]="200" 
+        [responsive]="true"
+        [infinite]="true"
+        [dots]="false"
+        [arrows]="false"
+        [counter]="false"
+    >
+        <div *ngFor="let machine of array_machines" class="carousel-slide">
+            <div class="photo_container">
+                <img src="{{ machine.img }}">
+            </div>
+            <div class="slide_info">
+                <div class="text">
+                    <div class="title">{{ machine.name }}</div>
+                    <div>{{ machine.location }}</div>
+                </div>
+                <app-item-button-list class="container_tags"></app-item-button-list>
             </div>
         </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="photo_container">
-            <img src="/assets/img_ejemplo.jpg">
-        </div>
-        <div class="slide_info">
-            <div>Maquina 1</div>
-            <div>Plaza de Toros de Valladolid</div>
-            <div>Tipo: Cafe</div>
-            <div>Stock: 10</div>
-            <div>Ventas esta semana: 5</div>
-            <div>Recaudado: 20</div>
-        </div>
-    </div>
-</carousel>
+    </carousel>
+</div>
