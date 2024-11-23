@@ -17,11 +17,15 @@ export class UtilsService {
     return this.http.get('http://127.0.0.1:8000/api/v1/machines/');
   }
 
-  private showModalSubject = new Subject<void>();
+  getMachine(id: number): Observable<any> {
+    return this.http.get(`http://127.0.0.1:8000/api/v1/machines/${id}/`);
+  }
+
+  private showModalSubject = new Subject<number>();
 
   showModal$ = this.showModalSubject.asObservable();
 
-  triggerModal() {
-    this.showModalSubject.next();
+  triggerModal(id: number) {
+    this.showModalSubject.next(id);
   }
 }
