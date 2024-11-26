@@ -1,0 +1,52 @@
+.slider-container {
+    padding: 1rem 1rem;
+}
+
+.carousel-slide {
+    background: #c1e0e9;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #067a9b;
+    .photo_container{
+        object-fit: cover;
+        overflow: hidden; 
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        img {
+            padding: 1rem 1rem 0rem 1rem;
+            width: auto;
+            height: 10rem;
+            object-fit: cover;
+        }
+    }
+    
+    .slide_info{
+        height: 50%;
+        padding: 0rem 1rem;
+        color: black;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text {
+            padding: 1rem 0rem;
+        }
+        .title {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: pre;
+        }
+        .container_tags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem 0rem;
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+<div class="slider-container">
+    <carousel  
+        [slideToShow]="7" 
+        [slideWidth]="200" 
+        [responsive]="true"
+        [infinite]="true"
+        [dots]="false"
+        [arrows]="false"
+        [counter]="false"
+    >
+        <div *ngFor="let machine of array_machines" class="carousel-slide">
+            <div class="photo_container">
+                <img src="{{ machine.img }}">
+            </div>
+            <div class="slide_info">
+                <div class="text">
+                    <div class="title">{{ machine.name }}</div>
+                    <div>{{ machine.location }}</div>
+                </div>
+                <app-item-button-list 
+                    class="container_tags"
+                    [id]="machine.id">
+                </app-item-button-list>
+            </div>
+        </div>
+    </carousel>
+</div>

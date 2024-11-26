@@ -1,0 +1,58 @@
+<div #modalElement class="container" style="right: -42rem;">
+    <div class="block_title">
+        <div class="title">{{ info_machine.name }}</div>
+        <div class="buttons">
+            <button style="background: #FF9800;">EDITAR</button>
+            <button style="background: #dc3545;">ELIMINAR</button>
+        </div>
+    </div>
+    <div class="block_info">
+        <svg width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ info_machine.location }}
+    </div>
+    <div class="block_info">
+        {{ info_machine.description }}
+    </div>
+    <div style="margin-bottom: 1rem;">
+        <label class="tag_section" style="">ETIQUETAS</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.2rem;">
+            <div class="characteristic" style="background-color: #4CAF50;">Capacidad de almacenamiento</div>
+            <div class="characteristic" style="background-color: #2196F3;">Pantalla de selección</div>
+            <div class="characteristic" style="background-color: #FF9800;">Sistema de pago</div>
+            <div class="characteristic" style="background-color: #9C27B0;">Dispenser (expulsor de productos)</div>
+            <div class="characteristic" style="background-color: #FF5722;">Sistema de refrigeración</div>
+            <div class="characteristic" style="background-color: #009688;">Monedero y billete de cambio</div>
+            <div class="characteristic" style="background-color: #3F51B5;">Sensores de control</div>
+            <div class="characteristic" style="background-color: #607D8B;">Pantalla de información</div>
+            <div class="characteristic" style="background-color: #8BC34A;">Opciones de accesibilidad</div>
+            <div class="characteristic" style="background-color: #795548;">Conectividad remota</div>
+            <div class="characteristic" style="background-color: #FFEB3B;">Diseño robusto y seguro</div>
+            <div class="characteristic" style="background-color: #607D8B;">Iluminación interna</div>
+            <div class="characteristic" style="background-color: #FFC107;">Sistema de gestión de inventarios</div>
+            <div class="characteristic" style="background-color: #E91E63;">Modo de ahorro energético</div>
+            <div class="characteristic" style="background-color: #673AB7;">Interfaz multilingüe</div>
+        </div>
+    </div>
+    <div class="machine_info" style="margin-bottom: 1rem;">
+        <label class="tag_section" style="">DATOS</label>
+        <div class="data_section">
+            <div class="titl_info">Campacidad de almacenamiento: </div>
+            <div class="value_info">100</div>
+        </div>
+        <div class="data_section">
+            <div class="titl_info">Stock actual: </div>
+            <div class="value_info">10</div>
+        </div>
+        <div class="data_section">
+            <div class="titl_info">Número de ventas día/mes/año: </div>
+            <div class="value_info">10/50/100</div>
+        </div>
+        <div class="data_section">
+            <div class="titl_info">Rentabilidad día/mes/año: </div>
+            <div class="value_info">20/70/150</div>
+        </div>
+    </div>
+</div>
