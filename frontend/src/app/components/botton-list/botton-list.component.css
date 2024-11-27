@@ -1,0 +1,23 @@
+.button_list_expand {
+    box-sizing: border-box;
+    height: 16px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    top: -8px;
+    width: 39px;
+    z-index: 8;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+
+    .span_item {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+
+    }
+}
