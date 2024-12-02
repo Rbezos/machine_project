@@ -7,5 +7,20 @@ html, body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     overflow: hidden;
-  }
+}
   
+.leaflet-popup-content {
+    margin: 0rem !important;
+    width: 17rem !important;
+    height: 13rem;
+}
+
+.leaflet-popup-content-wrapper{
+    overflow: hidden !important;
+    padding: 0 !important;
+    border-radius: 0.4rem !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: white !important;
+}
